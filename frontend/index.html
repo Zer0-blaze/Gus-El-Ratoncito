@@ -2,9 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/estilos.css">
     <title>Gus el ratoncito bailarín</title>
 </head>
 <body>
-    <h1>Conectado el Front y el Backend</h1>
+    <div id="contenedor">
+        <button id="btn-retroceder">←</button>
+        <button id="btn-reiniciar">⟲</button>
+
+        <h2 id="escena-titulo">Titulo Escena</h2>
+
+        <p id="escena-texto">Texto de la Escena</p>
+
+        <img 
+            id="escena-imagen" 
+            src="" 
+            alt="Ilustración de la escena"
+        >
+        <div id="alternativas">
+            <button>Alternativa 1</button>
+            <button>Alternativa 2</button>
+        </div>
+
+    </div>
+    
+    <script src="/js/api_client.js"></script>
+    <script src="/js/gestor_estado.js"></script>
+    <script src="/js/renderizador_ui.js"></script>
+    <script src="/js/gestor_navegacion.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>

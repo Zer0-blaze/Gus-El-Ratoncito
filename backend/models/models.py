@@ -20,7 +20,7 @@ class Alternativa(Base):
     id_escena_origen = Column(Integer, ForeignKey("escenas.id"))
     texto_opcion = Column(String, nullable = False)
     imagen_url = Column(String)
-    id_escena_siguiente = Column(Integer, ForeignKey("escenas.id")) # ✅
+    id_escena_siguiente = Column(Integer, ForeignKey("escenas.id"))
     escena_origen = relationship("Escena", foreign_keys=[id_escena_origen], back_populates="alternativas")
     escena_siguiente = relationship("Escena", foreign_keys=[id_escena_siguiente])
 

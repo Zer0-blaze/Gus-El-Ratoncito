@@ -37,6 +37,16 @@ escenas_data = [
 
 alternativas_data = [
     {
+        "id_escena_origen": 1,
+        "texto_opcion": "Siguiente",
+        "id_escena_siguiente": 2
+    },
+    {
+        "id_escena_origen": 2,
+        "texto_opcion": "Siguiente",
+        "id_escena_siguiente": 3
+    },
+    {
         "id_escena_origen": 3,
         "texto_opcion": "Seguir practicando",
         "id_escena_siguiente": 4
@@ -47,7 +57,6 @@ alternativas_data = [
         "id_escena_siguiente": 5
     }
 ]
-
 async def poblar():
     await init_db()
     async with AsyncSessionLocal() as session:

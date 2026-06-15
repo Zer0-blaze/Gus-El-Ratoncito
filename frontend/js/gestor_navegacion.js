@@ -15,8 +15,9 @@ class gestor_navegacion{
     }
 
     async retroceder(){
-        const hola = this.gestorEstado.retroceder()
-        const adios = await this.apiClient.fetchEscena(hola)
-        this.gestorEstado.ActualizarEscena(adios)
+        const escenaAnterior = this.gestorEstado.retroceder()
+        if (escenaAnterior) {
+            this.gestorEstado.escenaActual = escenaAnterior
+        }
     }
 }

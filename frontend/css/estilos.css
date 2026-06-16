@@ -36,7 +36,7 @@ body {
 
 #contenedor {
     display: none;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto; 
     padding: 2rem;
     text-align: center;
@@ -50,15 +50,38 @@ body {
 #escena-texto {
     color: #c47703;
     font-size: 1.2rem;
-    line-height: 1.6; 
+    line-height: 1.6;
     text-align: justify;
+    background-color: #fffdf0;
+    border: 1.5px solid #e8c97a; 
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+}
+
+.texto-narrador {
+    color: #c47703;
+    text-align: justify;
+    margin: 0.3rem 0;
+}
+
+.texto-personaje {
+    color: #1a7a4a;
+    font-style: italic;
+    text-align: right;
+    padding-right: 1rem;
+    border-right: 3px solid #029437;
+    margin: 0.3rem 0;
 }
 
 #escena-imagen {
     max-width: 100%;
-    width: 400px;    
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover; 
     border-radius: 12px;
     margin: 1.5rem 0;
+    height: auto;
 }
 
 #alternativas {
@@ -88,7 +111,7 @@ body {
     background-color: transparent;
     color: #df8406;
     border: 1.2px solid #df8406;
-    border-radius: 50%;
+    border-radius: 8px;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;

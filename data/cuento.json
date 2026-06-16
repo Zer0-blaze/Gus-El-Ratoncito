@@ -1,0 +1,120 @@
+{
+  "escenas": [
+    {
+      "orden": 1,
+      "titulo": "",
+      "texto": "Había una vez, en un pequeño bosque, un pequeño ratoncito llamado Gus. Era un ratón muy especial, porque veía el mundo en colores muy brillantes y hermosos. Cada mañana, cuando Gus salía de su casa, veía las flores de colores, un cielo celeste con nubes y las hojas verdes relucientes. ¡Gus amaba su mundo colorido!",
+      "imagen_url": "/images/escenas/escena_1.png"
+    },
+    {
+      "orden": 2,
+      "titulo": "",
+      "texto": "Un día, Gus se puso una meta, quería ser el ganador de un concurso de baile, que se hacía cada año en el bosque. Día tras día bailaba su canción favorita, bailaba muchas horas todos los días y soñaba con poder ganar el trofeo del mejor bailarín. Sin embargo, las cosas no salían como él esperaba.",
+      "imagen_url": "/images/escenas/escena_2.png"
+    },
+    {
+      "orden": 3,
+      "titulo": "",
+      "texto": "Algunos pasos de baile no le salían bien, se caía y por más que trataba no podía hacerlos como él quería. Esto le daba rabia y ganas de llorar. -Tengo que lograr hacer este paso o nunca ganaré el concurso- Decía con los ojos llorosos.",
+      "imagen_url": "/images/escenas/escena_3.png"
+    },
+    {
+      "orden": 4,
+      "titulo": "",
+      "texto": "Cada vez que algo no le salía bien, Gus notaba que los colores a su alrededor comenzaban a desvanecerse. Las flores ya no eran tan brillantes, el cielo se volvía gris, las hojas ya no tenían su color. ¿Por qué todo se vuelve gris cuando las cosas no salen como quiero? -Se preguntaba.",
+      "imagen_url": "/images/escenas/escena_4.png"
+    },
+    {
+      "orden": 5,
+      "titulo": "",
+      "texto": "Gus decidió no seguir practicando.",
+      "imagen_url": null
+    },
+    {
+      "orden": 6,
+      "titulo": "",
+      "texto": "A pesar de los obstáculos, Gus continuó practicando, hasta que un día cayó muy fuerte y se pegó en la patita izquierda. ¡¡¡...AAAYYY!!!",
+      "imagen_url": null
+    },
+    {
+      "orden": 7,
+      "titulo": "",
+      "texto": "En un momento llegó su mamá.\n— ¡Gus! ¿Estás bien? — Preguntó su madre.\n— No mamá, me duele mucho mi patita... — Dijo llorando.",
+      "imagen_url": null
+    },
+    {
+      "orden": 8,
+      "titulo": "",
+      "texto": "Mamá decidió apagar la radio donde reproducía la música de su baile.\n— ¡Tengo que seguir practicando, mami! — Exclamó Gus con su voz llena de angustia.",
+      "imagen_url": null
+    },
+    {
+      "orden": 9,
+      "titulo": "",
+      "texto": "Su madre dijo:\n— No, hasta que te recuperes de tu patita, si sigues practicando te la puedes romper.\n— ¡Pero mamá! — Gritó Gus. — ¡Tengo que ganar ese concurso de baile, es mi sueño!",
+      "imagen_url": null
+    },
+    {
+      "orden": 10,
+      "titulo": "",
+      "texto": "Mamá dijo preocupada:\n— Lo siento hijo, pero tienes que sanarte. Es lo más importante ahora.",
+      "imagen_url": null
+    }
+  ],
+  "alternativas": [
+    {
+      "id_escena_origen": 1,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 2
+    },
+    {
+      "id_escena_origen": 2,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 3
+    },
+    {
+      "id_escena_origen": 3,
+      "texto_opcion": "Seguir practicando",
+      "imagen_url": null,
+      "id_escena_siguiente": 4
+    },
+    {
+      "id_escena_origen": 3,
+      "texto_opcion": "Rendirse",
+      "imagen_url": null,
+      "id_escena_siguiente": 5
+    },
+    {
+      "id_escena_origen": 4,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 6
+    },
+    {
+      "id_escena_origen": 6,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 7
+    },
+    {
+      "id_escena_origen": 7,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 8
+    },
+    {
+      "id_escena_origen": 8,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 9
+    },
+    {
+      "id_escena_origen": 9,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 10
+    }
+  ]
+}

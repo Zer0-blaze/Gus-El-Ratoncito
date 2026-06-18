@@ -27,7 +27,7 @@
     {
       "orden": 5,
       "titulo": "",
-      "texto": "Gus decidió no seguir practicando.",
+      "texto": "Gus decidio tomarse un descanso hasta su proxima presentación",
       "imagen_url": null
     },
     {
@@ -59,7 +59,56 @@
       "titulo": "",
       "texto": "Mamá dijo preocupada:\n— Lo siento hijo, pero tienes que sanarte. Es lo más importante ahora.",
       "imagen_url": null
+    },
+    {
+      "orden": 11,
+      "titulo": "",
+      "texto": "Gus se fue a descansar para recuperarse. En ese momento llegó por la ventana, su amiga Lilia la mariposa: \n— ¿Qué te pasó? - Preguntó su amiga preocupada.\n— Me caí y me duele mucho la patita - Respondió Gus con una voz llena de pena.\n— Lo siento mucho, Gus - Respondió Lilia, acercándose a él.",
+      "imagen_url": null
+    },
+    {
+      "orden": 12,
+      "titulo": "",
+      "texto": "Lilia lo miró con ternura y le dijo:\n— Cuando era pequeña una de mis alas jamás creció como debía y no podía volar, pero eso no me detuvo. Practicaba todos los días hasta que un día lo logré.\n Gus la miró sorprendido:\n— ¿De verdad? - Preguntó, sintiendo una chispa de esperanza.",
+      "imagen_url": null
+    },
+    {
+      "orden": 13,
+      "titulo": "",
+      "texto": "Lilia respondió:\n— Sí, los colores del mundo siempre están ahí. Gus, no se van porque fracasas, están en tu corazón y en cómo ves el mundo. Además, con esfuerzo y dedicación ¡Puedes lograr todo lo que te propongas!",
+      "imagen_url": null
+    },
+    {
+      "orden": 14,
+      "titulo": "",
+      "texto": "Curioso Gus preguntó:\n— ¿Y qué debo hacer cuando todo parece gris?\nLilia respondió:\n— Recuerda los colores que más te gustan y busca la belleza en tus pequeños logros.",
+      "imagen_url": null
+    },
+    {
+      "orden": 15,
+      "titulo": "",
+      "texto": "Después de hablar con su amiga Lilia, Gus se sintió muy motivado y esperó con entusiasmo la recuperación de su patita, a pesar de no poder asistir al concurso de baile. Con el tiempo Gus se curó del dolor y siguió con todo el entusiasmo, practicando los bailes que tanto le gustaban. El resto del año aprendió que habían días más brillantes que otros y continuó mejorando cada pasito de baile.",
+      "imagen_url": null
+    },
+    {
+      "orden": 16,
+      "titulo": "",
+      "texto": "Cuando llegó el día del concurso había un escenario espectacular, con focos muy luminosos, con muchos espectadores y un telón rojo impresionante. Era el escenario más importante y hermoso del bosque. Después de que Gus bailara lo que tanto practicó, logró movimientos preciosos, que jamás se habían visto en ese escenario.",
+      "imagen_url": null
+    },
+    {
+      "orden": 17,
+      "titulo": "",
+      "texto": "Después de presentar su baile, había llegado el momento que tanto estaba esperando.\n— Y el ganador es... ¡Gus, el ratoncito bailarín!\n Gus no podía creerlo. Todo el público estaba de pie aplaudiendo sus espectaculares pasos de baile. Su madre y su amiga la mariposa Lilia, subieron al escenario a abrazarlo, embelleciendo ese momento tan importante para él.",
+      "imagen_url": null
+    },
+    {
+      "orden": 18,
+      "titulo": "",
+      "texto": "Moraleja: No es el tiempo que te demores en lograr tus metas, es la perseverancia que tienes para lograrlo. Todos los días es un logro, aunque sea sólo despertar por la mañana.",
+      "imagen_url": null
     }
+
   ],
   "alternativas": [
     {
@@ -82,7 +131,7 @@
     },
     {
       "id_escena_origen": 3,
-      "texto_opcion": "Rendirse",
+      "texto_opcion": "Descansar",
       "imagen_url": null,
       "id_escena_siguiente": 5
     },
@@ -115,6 +164,54 @@
       "texto_opcion": "Siguiente",
       "imagen_url": null,
       "id_escena_siguiente": 10
+    },
+    {
+      "id_escena_origen": 10,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 11
+    },
+    {
+      "id_escena_origen": 11,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 12
+    },
+    {
+      "id_escena_origen": 12,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 13
+    },
+    {
+      "id_escena_origen": 13,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 14
+    },
+    {
+      "id_escena_origen": 14,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 15
+    },
+    {
+      "id_escena_origen": 15,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 16
+    },
+    {
+      "id_escena_origen": 16,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 17
+    },
+    {
+      "id_escena_origen": 17,
+      "texto_opcion": "Siguiente",
+      "imagen_url": null,
+      "id_escena_siguiente": 18
     }
   ]
 }

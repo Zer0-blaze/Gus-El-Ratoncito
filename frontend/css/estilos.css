@@ -65,7 +65,7 @@ body {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.8;
-    color: #7a4800;
+    color: #714102;
     text-align: justify;
     box-shadow: 4px 4px 15px rgba(0,0,0,0.15);
 }
@@ -149,4 +149,29 @@ body {
 #btn-retroceder:hover, #btn-reiniciar:hover {
     background-color: #f3ab4d;  
     color: #ac3405;
+}
+
+#control-audio {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.55);
+    padding: 8px 14px;
+    border-radius: 50px;
+}
+
+#icono-volumen {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#volumen {
+    width: 100px;
+    cursor: pointer;
+    accent-color: #c47703;
 }

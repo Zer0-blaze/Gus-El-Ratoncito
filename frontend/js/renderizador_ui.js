@@ -1,6 +1,9 @@
 class renderizador_ui {
     constructor() {}
 
+     // Input: escena y onAlternativaClick
+    // Funcion: muestra todos los datos (Texto, imagenes, botones, etc)
+    // Output: ninguno
     renderizar(escena, onAlternativaClick){
         const titulo = document.getElementById("escena-titulo")
         titulo.textContent = escena.titulo

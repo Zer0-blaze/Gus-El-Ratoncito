@@ -16,7 +16,7 @@ app.include_router(escena_router)
 app.mount("/css", StaticFiles(directory="frontend/css"), name="css")
 app.mount("/js", StaticFiles(directory="frontend/js"), name="js")
 app.mount("/images", StaticFiles(directory="frontend/images"), name="images")
-
+app.mount("/assets", StaticFiles(directory="frontend/assets"), name="assets")
 
 @app.get("/")
 def inicio():

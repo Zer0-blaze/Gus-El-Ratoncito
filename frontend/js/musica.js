@@ -1,36 +1,69 @@
 const audio = new Audio()
 audio.loop = true
 let pistaActual = ''
+const VOLUMEN_DEFAULT = 0.15
+const DURACION_FADE = 1500
+
+const CAMBIOS_MUSICA = [
+    {desde: 1, pista: '/assets/tranquila.mp3'},
+    {desde: 3, pista: '/assets/triste.mp3'},
+    {desde: 5, pista: '/assets/tranquila.mp3'},
+    {desde: 6, pista: '/assets/triste.mp3'},
+    {desde: 11, pista: '/assets/esperanza.mp3'},
+    {desde: 15, pista: '/assets/triunfo.mp3'},
+    {desde: 18, pista: '/assets/final.mp3'},
+]
+
+function obtenerPista(ordenEscena) {
+    let pista = CAMBIOS_MUSICA[0].pista
+    for (const cambio of CAMBIOS_MUSICA) {
+        if (ordenEscena >= cambio.desde) pista = cambio.pista
+    }
+    return pista
+}
+
+function fadeTo(objetivo, duracion = DURACION_FADE) {
+    const inicio = audio.volume
+    const diferencia = objetivo - inicio
+    const pasos = 30
+    const intervalo = duracion / pasos
+    let paso = 0
+
+    const timer = setInterval(() => {
+        paso++
+        audio.volume = Math.min(1, Math.max(0, inicio + (diferencia * paso / pasos)))
+        if (paso >= pasos) clearInterval(timer)
+    }, intervalo)
+}
 
 function inicializarAudio() {
+    audio.volume = 0
     audio.play().catch(() => {})
+    fadeTo(VOLUMEN_DEFAULT)
 }
 
 function reproducirMusicaEscena(ordenEscena) {
-    const mapaMusica = {
-        1: '/assets/tranquila.mp3',
-        2: '/assets/tranquila.mp3',
-        3: '/assets/triste.mp3',
-        4: '/assets/triste.mp3',
-        5: '/assets/tranquila.mp3',
-        6: '/assets/triste.mp3',
-        7: '/assets/triste.mp3',
-        8: '/assets/triste.mp3',
-        9: '/assets/triste.mp3'
-    }
-
-    const nuevaRuta = mapaMusica[ordenEscena] || '/assets/tranquila.mp3'
+    const nuevaRuta = obtenerPista(ordenEscena)
 
     if (pistaActual !== nuevaRuta) {
-        audio.src = nuevaRuta
-        pistaActual = nuevaRuta
-        audio.play().catch(() => {})
+        fadeTo(0)
+        setTimeout(() => {
+            audio.src = nuevaRuta
+            pistaActual = nuevaRuta
+            audio.volume = 0
+            audio.play().catch(() => {})
+            fadeTo(VOLUMEN_DEFAULT)
+        }, DURACION_FADE)
     } else {
-        audio.play().catch(() => {})
+        if (audio.paused) {
+            audio.volume = 0
+            audio.play().catch(() => {})
+            fadeTo(VOLUMEN_DEFAULT)
+        }
     }
 }
 
-audio.volume = 0.5
+audio.volume = 0
 
 document.addEventListener("DOMContentLoaded", () => {
     const volumenSlider = document.getElementById("volumen")
@@ -49,8 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
             volumenSlider.value = 0
             iconoVolumen.textContent = "🔇"
         } else {
-            audio.volume = 0.25
-            volumenSlider.value = 0.5
+            audio.volume = VOLUMEN_DEFAULT
+            volumenSlider.value = VOLUMEN_DEFAULT
             iconoVolumen.textContent = "🔊"
         }
     })

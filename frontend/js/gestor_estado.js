@@ -1,4 +1,3 @@
-
 class gestor_estado{
     constructor(){
         this.escenaActual = null;
